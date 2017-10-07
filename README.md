@@ -1,0 +1,2 @@
+# Google Doc Coding Practice
+This repository contains codes for problems that I solve and write on Google Docs in preparation for technical phone interview. None of the questions here are from interviews that I had. Those questions are from online sources. Feel free to look over the questions as well as my solutions for those questions. Please reach out to me if you have any question about my code or interview preparation in general.
