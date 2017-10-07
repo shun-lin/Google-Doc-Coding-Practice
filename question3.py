@@ -46,3 +46,15 @@ def permutations(string):
 		result.append(head + rest_permutation)
 
 return result;
+
+What is the running time of this solution?
+The running time of this solution is defined by the following
+
+T(n) = nT(n-1) + O(1) = nT(n-1) + 1
+T(n) = n((n-1)T(n-1-1) + 1) + 1 = n(n-1)T(n-1-1) + n + 1
+after ith iteration we will have
+
+T(n) = n(n-1)(n-2)......1 + n + n - 1 + n -2
+The constant term will become n^2
+n^n
+So T(n) = n^n which is bad and we can do better
