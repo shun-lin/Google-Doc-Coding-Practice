@@ -30,3 +30,6 @@ def findIndex(arr, x):
 			return helper(arr, mid, high, x)
 
 	return helper(arr, 0, len(arr) - 1, x)
+
+the runtime for this algorithm will be O(logn) as this is a binary search so at each iteration we also look at 1/2 of the remaining values
+The space complexity of this solution is O(logn) constant as we will have up to  log(n) recursive calls in the stack
