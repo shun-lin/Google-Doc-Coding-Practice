@@ -53,6 +53,26 @@ let i be the i'th digit of the input
 
 Code:
 
+# return nines with the same amount of digits as num
+def allNines(num):
+	num_of_digits = floor(log(num))
+	result = 0
+	for i in range(0, num_of_digits):
+		result += 9 * 10 ** i
+	return result
+
+
+# return the highest digit of num
+def highestDigit(num):
+	num_of_digits = floor(log(num))
+	return num % (10 ** num_of_digits)
+
+# return the rest of the digits of num except the highest digit
+def restDigits(num):
+	num_of_digits = floor(log(num))
+	highest_digit = highestDigit(num)
+	return num - highest_digit * 10 ** num_of_digits
+
 # Input: integer
 # Output: integer, the highest tidy num
 def findHighestTidyNum(num):
