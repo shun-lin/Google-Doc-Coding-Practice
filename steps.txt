@@ -1,0 +1,11 @@
+Below are the steps we should follow in software engineering interview.
+
+1) Repeat the question to make sure we understand the question and details needed.
+2) Clarify what is the input and the expected output.
+3) Check any assumptions with the interviewer.
+4) Give one or more approach to solve the problem (without coding).
+5) Discuss the tradeoff of your solutions with your interviewer.
+6) Code the solution.
+7) Test the solution with normal test cases.
+8) Test the solution with edge test cases.
+9) Optional -- There may be follow up questions, repeat the same step.
