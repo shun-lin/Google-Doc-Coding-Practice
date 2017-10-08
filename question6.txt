@@ -1,0 +1,22 @@
+Technical Practice Question: which sorting algos are there and their complexities .compare sorting algos and explain how the complexity was derived
+
+Most famous ones and the ones that most programmers use for better time complexity are:
+
+merge sort, is a divide and conquer algorithm that in each recursive call, we break the problem down into left and right half of the array we are sorting and this will give us the recurrence runtime analysis of:
+
+T(n) = 2T(n-1) + O(n) -> O(nlogn)
+
+quicksort
+
+We pick a random pivot and we put elements that are smaller to the pivot on one side and greater on another side and equals in the middle and we recursively quicksort the smaller elements an bigger elements. Quicksort also have the runtime of O(nlogn)
+
+Because those algorithms are most of the time written in recursive form, there will be some space requirement for the recursive stacks.
+
+Follow up question: how can I sort a million integers efficiently.
+
+Question for interviewer:
+1) Do I have enough memory to store all million integers?
+
+Assumptions and solution:
+1) If we have enough memory to store all million integers and we have the space to perform the recursive stacks needed for either merge sort or quicksort, I will just get the list of integers to my memory and sort it using merge sort.
+2) If not I will sort in chucks using merge sort and then have runs that each run are sorted and sort pairs of runs until we only have one sorted run.
