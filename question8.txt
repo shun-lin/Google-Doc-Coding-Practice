@@ -1,0 +1,12 @@
+What are three representations of graphs?
+
+Nodes and pointers
+	Nodes and pointers are good for object-oriented design, we use OOP to represent the graphs with nodes being vertices and pointers being edges.
+
+Adjacency Matrix
+	We use a 2d matrix to represent the edges of the graphs and the index represent the vertices, so mat[i][j] = the weight of edges from vertex i to vertex j. This representation can be directed or undirected
+
+Adjacency List
+	We use a hashmap which the key is each vertex and the value are a list of vertices that correspond to vertex key -> other vertex.
+
+Adjacency matrix is good for adding, deleting, and finding whether there is an edge between i and j (Adjacency matrix takes O(1) time because it is just array accessing, which is O(1), and Adjacency list takes O(logn) for those operations as we need to find j in the list of i's vertices and the best we can do is binary search and this will take O(logn) time). Adjacency list is good for finding the successors of a vertex (adj. list takes O(k) where k is the length is the list and adj. matrix will take O(n)). Adjacency list is also good for finding a path from i to j, which will take O(n+m) times and adj. matrix will take O(n^2) if using BFS or DFS)
