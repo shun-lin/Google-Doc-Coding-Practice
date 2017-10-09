@@ -1,0 +1,3 @@
+Technical Question: Given a file of 4 billion 32-bit integers, how to find one that appears at least twice?
+
+We can use bits to represent whether we seen an integer before. 4 billions is 2^2 billions and 2^10 is a thousand, 2^30 is a billion so 2^34 bits can represent 4 billions and we will be able to fit 2^34 into the memory. Since we can't load the entire 4 billion ints into the memory, we need to read the ints from disk by chunks and increment the same 2^34 bit counters we have.
